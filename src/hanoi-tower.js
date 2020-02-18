@@ -3,13 +3,9 @@ module.exports = function calculateHanoi(disks, turnRate) {
 
     turnRate = turnRate/3600;
 
-    let turns = Math.pow(2,disks)-1;
-    obj.turns = turns;
-
-    let seconds = turns/turnRate;
-
+    obj.turns = Math.pow(2,disks)-1;
     
-    obj.seconds = seconds;
+    obj.seconds = obj.turns/turnRate;
 
     return obj;
 }
