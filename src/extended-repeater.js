@@ -12,7 +12,7 @@ module.exports = function repeater(str,{repeatTimes, separator = "+", addition, 
         } else { addBlock.push(addition)}
     }
 
-    str = (str === null?"null":String(str)) + addBlock.join(additionSeparator);
+    str = String(str) + addBlock.join(additionSeparator);
     
     if (repeatTimes>0) {
         while (repeatTimes) {
