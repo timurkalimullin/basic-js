@@ -1,0 +1,393 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200225.184657.4920.0.001.json",
+    "dumpEventTime": "2020-02-25T18:46:57Z",
+    "dumpEventTimeStamp": "1582638417446",
+    "processId": 4920,
+    "cwd": "e:\\111\\webdev\\rsschool\\algoritms\\basic-js",
+    "commandLine": [
+      "node",
+      "c:\\Users\\Пека\\Desktop\\Untitled-1.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Ultimate Service Pack 1",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz",
+        "speed": 3309,
+        "user": 1338145,
+        "nice": 0,
+        "sys": 426413,
+        "idle": 19500296,
+        "irq": 95862
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz",
+        "speed": 3309,
+        "user": 1487500,
+        "nice": 0,
+        "sys": 314295,
+        "idle": 19462528,
+        "irq": 15007
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz",
+        "speed": 3309,
+        "user": 1503241,
+        "nice": 0,
+        "sys": 370595,
+        "idle": 19390362,
+        "irq": 14960
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz",
+        "speed": 3309,
+        "user": 1723436,
+        "nice": 0,
+        "sys": 292829,
+        "idle": 19247808,
+        "irq": 10124
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Подключение по локальной сети",
+        "internal": false,
+        "mac": "30:85:a9:a1:07:e4",
+        "address": "fe80::815a:1fb:5537:f2e3",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "Подключение по локальной сети",
+        "internal": false,
+        "mac": "30:85:a9:a1:07:e4",
+        "address": "192.168.0.101",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Peka"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000013f7a1389",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x000000013f7a57cc",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28348"
+    },
+    {
+      "pc": "0x000000013f7a4778",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24168"
+    },
+    {
+      "pc": "0x000000013f89332b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x0000000140096f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x000000014007ef91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x000000013ff4c85c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x000000013ff57c00",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x000000013ff54734",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x000000013ff49fc3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x000000013ff48794",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x000000013ff69a65",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x000000013fcd6239",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00000001404c2c6d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x00000001404c3d71",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+572305"
+    },
+    {
+      "pc": "0x000000929174f3b7",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2154889216,
+    "totalCommittedMemory": 2154889216,
+    "usedMemory": 2149354640,
+    "availableMemory": 45564944,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 3145728,
+        "committedMemory": 3145728,
+        "capacity": 1571232,
+        "used": 748600,
+        "available": 822632
+      },
+      "old_space": {
+        "memorySize": 2150477824,
+        "committedMemory": 2150477824,
+        "capacity": 2148166016,
+        "used": 2148150592,
+        "available": 15424
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 216800,
+        "used": 216800,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 202800,
+        "used": 202800,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1571232,
+        "used": 0,
+        "available": 1571232
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 114.723,
+    "kernelCpuSeconds": 14.227,
+    "cpuConsumptionPercent": 116.171,
+    "maxRss": 2328862720,
+    "pageFaults": {
+      "IORequired": 756694,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2,
+      "writes": 14239919
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "E:=e:\\111\\webdev\\rsschool\\algoritms\\basic-js",
+    "ADSK_3DSMAX_x64_2017": "C:\\Program Files\\Autodesk\\3ds Max 2017\\",
+    "ADSK_3DSMAX_x64_2018": "C:\\Program Files\\Autodesk\\3ds Max 2018\\",
+    "ADSK_CLM_WPAD_PROXY_CHECK": "FALSE",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "APPDATA": "C:\\Users\\Пека\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132181230471788312",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "PEKA",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "CUDA_CACHE_MAXSIZE": "268435456",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Пека",
+    "IntelliJ IDEA": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2019.2.3\\bin;",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-13.0.1",
+    "LOCALAPPDATA": "C:\\Users\\Пека\\AppData\\Local",
+    "LOGONSERVER": "\\\\PEKA",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OS": "Windows_NT",
+    "Path": "C:\\Python27\\;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\ffmpeg\\bin;%JAVA_HOME%\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Yarn\\bin\\export PATH=./node_modules/.bin:$PATH;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\Java\\jdk-13.0.1\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2019.2.3\\bin;;C:\\Users\\Пека\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Пека\\AppData\\Roaming\\npm;C:\\Users\\Пека\\AppData\\Local\\Yarn\\binexport PATH=./node_modules/.bin:$PATH;C:\\Users\\Пека\\AppData\\Local\\Yarn\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\FEB0~1\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\FEB0~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "Peka",
+    "USERNAME": "Пека",
+    "USERPROFILE": "C:\\Users\\Пека",
+    "VERBOSE_LOGGING": "true",
+    "VRAY30_RT_FOR_3DSMAX2018_MAIN_x64": "C:\\Program Files\\Chaos Group\\V-Ray\\RT for 3ds Max 2018 for x64/bin",
+    "VRAY30_RT_FOR_3DSMAX2018_PLUGINS_x64": "C:\\Program Files\\Chaos Group\\V-Ray\\RT for 3ds Max 2018 for x64/bin/plugins",
+    "VRAY_MDL_PATH_3DSMAX2018_x64": "C:\\Program Files\\Chaos Group\\V-Ray\\3dsmax 2018 for x64\\mdl",
+    "VRAY_OSL_PATH_3DSMAX2018_x64": "C:\\Program Files\\Chaos Group\\V-Ray\\3dsmax 2018 for x64\\opensl",
+    "VRAY_SEND_FEEDBACK": "0",
+    "VSCODE_CWD": "C:\\Users\\Пека\\AppData\\Local\\Programs\\Microsoft VS Code",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\12d9891a932b0626c7da08d18077506b-1.42.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-91dc60f5-d49a-48c6-bf41-eff3b3b35a5a-sock",
+    "VSCODE_LOGS": "C:\\Users\\Пека\\AppData\\Roaming\\Code\\logs\\20200225T161244",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"ru\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\Пека\\AppData\\Roaming\\Code\\CachedData\\c47d83b293181d9be64f27ff093689e8e7aed054",
+    "VSCODE_PID": "1728",
+    "windir": "C:\\Windows",
+    "windows_tracing_flags": "3",
+    "windows_tracing_logfile": "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\system32\\kernel32.dll",
+    "C:\\Windows\\system32\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\system32\\msvcrt.dll",
+    "C:\\Windows\\system32\\WS2_32.dll",
+    "C:\\Windows\\system32\\RPCRT4.dll",
+    "C:\\Windows\\system32\\NSI.dll",
+    "C:\\Windows\\system32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\sechost.dll",
+    "C:\\Windows\\system32\\USER32.dll",
+    "C:\\Windows\\system32\\GDI32.dll",
+    "C:\\Windows\\system32\\LPK.dll",
+    "C:\\Windows\\system32\\USP10.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\system32\\PSAPI.DLL",
+    "C:\\Windows\\system32\\USERENV.dll",
+    "C:\\Windows\\system32\\profapi.dll",
+    "C:\\Windows\\system32\\CRYPT32.dll",
+    "C:\\Windows\\system32\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\system32\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\system32\\SETUPAPI.dll",
+    "C:\\Windows\\system32\\CFGMGR32.dll",
+    "C:\\Windows\\system32\\OLEAUT32.dll",
+    "C:\\Windows\\system32\\ole32.dll",
+    "C:\\Windows\\system32\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\system32\\bcryptprimitives.dll",
+    "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll"
+  ]
+}
